@@ -2092,7 +2092,9 @@ client.on("message", message => {
    ╱╱╱╱╱╱╱╱╰━━╯   
    **
 **
-[❖═════ لتشغيل اللوق Log يجب وجود روم باسم ═══════❖]
+[❖═════ To Turn On The Bot Log Create Channel Named log ═══════❖]
+
+[❖═════ To Use All Orders of punishment You Need To Create Channel Named incidents ═══════❖]
 
 [❖═════════════════════════════❖]
            Why KingBot ?__
@@ -2103,10 +2105,10 @@ client.on("message", message => {
 - :shield: Contains a firewall to keep servers safe
 - :musical_note: It has a high quality music feature
 [❖═════════════════════════════❖]
-
-**
+          _ _                 _ _
+**           ----------------
            **General Commands**
-   **
+**
 
    『${prefix}server / Server Information』
 
@@ -2121,6 +2123,7 @@ client.on("message", message => {
    『${prefix}queue / To View The Queue List』
 
    『${prefix}skip / To Skip The Video And Play The Next Video』
+
    **
            **Administrative Commands**
    **
@@ -2133,11 +2136,11 @@ client.on("message", message => {
 
    『${prefix}-hrole / To View Help Pull Role』
 
-   『${prefix}tempmute / لاعطاء ميوت مؤقت』
+   『${prefix}tempmute / To Temporary Mute A Person』
 
-   『${prefix}mute / To Mute Someone』
+   『${prefix}mute / To Mute A Person』
 
-   『${prefix}unmute / To Unban Someone』
+   『${prefix}unmute / To Unban A Person』
 
    『${prefix}ban / To Permanently Banned A Person』
 
@@ -2148,6 +2151,12 @@ client.on("message", message => {
    『${prefix}warn / To Warn A Person』
 
    『${prefix}bc / To Send A Message To All Members』
+
+   『${prefix}temp on / To Turn On The Temporary Rooms』
+
+   『${prefix}temp off / To Turn off The Temporary Rooms』
+
+   『${prefix}temptime / To Change The Temporary Rooms Time』
 
    **
            **Bot Commands**
@@ -2167,9 +2176,10 @@ client.on("message", message => {
 
              _ _---------------- _ _
    **
-
+[❖═════════════════════════════❖]
   BOT By: | <@429972030092476437> 
 **__The KingBot Team :>__**
+[❖═════════════════════════════❖]
    **
 
    `)
