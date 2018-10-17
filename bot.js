@@ -2149,6 +2149,9 @@ client.on("message", message => {
    『${prefix}temp on / To Turn On The Temporary Rooms』
    『${prefix}temp off / To Turn off The Temporary Rooms』
    『${prefix}temptime / To Change The Temporary Rooms Time』
+   『${prefix}autorole toggle / To Turn On , Turn Off The Autorole』
+   『${prefix}autorole set / To Set The Autorole Role』
+
    **
            **Bot Commands**
    **
