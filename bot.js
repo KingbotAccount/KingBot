@@ -68,9 +68,6 @@ console.log(`Logged in as  * [ "  Team #KingBot " ] servers! [ " ${client.guilds
       }
   });
 
-
-
-
   client.on('message', async message => {
     let mention = message.mentions.members.first();
   let command = message.content.split(" ")[0];
@@ -2111,38 +2108,60 @@ client.on("message", message => {
            **General Commands**
    **
 
-   『${prefix}server/ Server Information』
-   『${prefix}image/ To View The Server Icon』
-   『${prefix}avatar/ To View Avatar A Person』
-   『${prefix}play/ To Play A Video From Youtube』
-   『${prefix}stop/ To Stop The Video』
-   『${prefix}queue/ To View The Queue List』
-   『${prefix}skip/ To Skip The Video And Play The Next Video』
+   『${prefix}server / Server Information』
+
+   『${prefix}image / To View The Server Icon』
+
+   『${prefix}avatar / To View Avatar A Person』
+
+   『${prefix}play / To Play A Video From Youtube』
+
+   『${prefix}stop / To Stop The Video』
+
+   『${prefix}queue / To View The Queue List』
+
+   『${prefix}skip / To Skip The Video And Play The Next Video』
    **
            **Administrative Commands**
    **
 
    『${prefix}setwelcomer / Setup The Welcome Channel』
+
    『${prefix}prune / To Prune The Chat』
+
    『${prefix}hrole / To View Help Addrole Role』
+
    『${prefix}-hrole / To View Help Pull Role』
+
    『${prefix}tempmute / لاعطاء ميوت مؤقت』
+
    『${prefix}mute / To Mute Someone』
+
    『${prefix}unmute / To Unban Someone』
+
    『${prefix}ban / To Permanently Banned A Person』
+
    『${prefix}unban / To Unban A Person』
+
    『${prefix}tempban / To Temporary Banned A Person』
+
    『${prefix}warn / To Warn A Person』
+
+   『${prefix}bc / To Send A Message To All Members』
 
    **
            **Bot Commands**
    **
 
-   『${prefix}ping/ View The Bot Ping』
-   『${prefix}uptime/ uptime bot』
-   『${prefix}support/ Support Server』
-   『${prefix}invite/ Invite DannyBot』
-   『${prefix}botinfo/ To View Server Information』
+   『${prefix}ping / View The Bot Ping』
+
+   『${prefix}uptime / uptime bot』
+
+   『${prefix}support / Support Server』
+
+   『${prefix}invite / Invite DannyBot』
+
+   『${prefix}botinfo / To View Server Information』
 
    **
 
@@ -2298,7 +2317,7 @@ client.on('message', message => {
 
   client.on('message', message => {
             if(!message.channel.guild) return;
-  if(message.content.startsWith('d!bc')) {
+  if(message.content.startsWith('k#bc')) {
   if(!message.channel.guild) return message.channel.send('**This is only for servers**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**Unfortunately you do not have permission** `ADMINISTRATOR`' );
   let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
