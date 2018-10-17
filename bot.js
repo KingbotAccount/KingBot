@@ -2114,7 +2114,15 @@ client.on("message", message => {
    『${prefix}queue / To View The Queue List』
    『${prefix}skip / To Skip The Video And Play The Next Video』
    **
-           **Administrative Commands**
+   `)
+   
+   }
+   });  
+
+   client.on("message", message => {
+    if (message.content === (prefix + "help")) {
+  message.author.send(`
+   **Administrative Commands**
    **
    『${prefix}setwelcomer / Setup The Welcome Channel』
    『${prefix}prune / To Prune The Chat』
