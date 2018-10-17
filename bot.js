@@ -2109,71 +2109,40 @@ client.on("message", message => {
 **           ----------------
            **General Commands**
 **
-
    『${prefix}server / Server Information』
-
    『${prefix}image / To View The Server Icon』
-
    『${prefix}avatar / To View Avatar A Person』
-
    『${prefix}play / To Play A Video From Youtube』
-
    『${prefix}stop / To Stop The Video』
-
    『${prefix}queue / To View The Queue List』
-
    『${prefix}skip / To Skip The Video And Play The Next Video』
-
    **
            **Administrative Commands**
    **
-
    『${prefix}setwelcomer / Setup The Welcome Channel』
-
    『${prefix}prune / To Prune The Chat』
-
    『${prefix}hrole / To View Help Addrole Role』
-
    『${prefix}-hrole / To View Help Pull Role』
-
    『${prefix}tempmute / To Temporary Mute A Person』
-
    『${prefix}mute / To Mute A Person』
-
    『${prefix}unmute / To Unban A Person』
-
    『${prefix}ban / To Permanently Banned A Person』
-
    『${prefix}unban / To Unban A Person』
-
    『${prefix}tempban / To Temporary Banned A Person』
-
    『${prefix}warn / To Warn A Person』
-
    『${prefix}bc / To Send A Message To All Members』
-
    『${prefix}temp on / To Turn On The Temporary Rooms』
-
    『${prefix}temp off / To Turn off The Temporary Rooms』
-
    『${prefix}temptime / To Change The Temporary Rooms Time』
-
    **
            **Bot Commands**
    **
-
    『${prefix}ping / View The Bot Ping』
-
    『${prefix}uptime / uptime bot』
-
    『${prefix}support / Support Server』
-
    『${prefix}invite / Invite DannyBot』
-
    『${prefix}botinfo / To View Server Information』
-
    **
-
              _ _---------------- _ _
    **
 [❖═════════════════════════════❖]
@@ -2181,7 +2150,6 @@ client.on("message", message => {
 **__The KingBot Team :>__**
 [❖═════════════════════════════❖]
    **
-
    `)
    message.author.sendEmbed(embed)
    
