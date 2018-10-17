@@ -2122,7 +2122,7 @@ client.on("message", message => {
    client.on("message", message => {
     if (message.content === (prefix + "help")) {
   message.author.send(`
-   **Administrative Commands**
+           **Administrative Commands**
    **
    『${prefix}setwelcomer / Setup The Welcome Channel』
    『${prefix}prune / To Prune The Chat』
