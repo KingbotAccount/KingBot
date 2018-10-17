@@ -1530,7 +1530,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`in ${client.guilds.size} servers `)
     console.log(`[ ] ${client.users.size}`)
-    client.user.setStatus("idle")
+    client.user.setStatus("Watching")
 });
 
 
@@ -2274,7 +2274,6 @@ client.on("guildMemberAdd", member => {
 
 client.on('message', message => {
   if(message.content.startsWith(prefix + "server")){
-    if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.reply(`**هذه الخاصية للادارة فقط** :negative_squared_cross_mark: `)
   if(!message.channel.guild) return message.reply(' ');
   const millis = new Date().getTime() - message.guild.createdAt.getTime();
   const now = new Date();
@@ -2296,4 +2295,46 @@ client.on('message', message => {
   
   }
   });
+
+  client.on('message', message => {
+            if(!message.channel.guild) return;
+  if(message.content.startsWith('d!bc')) {
+  if(!message.channel.guild) return message.channel.send('**This is only for servers**').then(m => m.delete(5000));
+if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**Unfortunately you do not have permission** `ADMINISTRATOR`' );
+  let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
+  let copy = "KingBot";
+  let request = `Requested By ${message.author.username}`;
+  if (!args) return message.reply('**You must type a word or phrase at the moment of the broadcast**');message.channel.send(`**Are you sure you want to send your broadcast \n Braodcast Content:** \` ${args}\``).then(msg => {
+  msg.react('✅')
+  .then(() => msg.react('❌'))
+  .then(() =>msg.react('✅'))
+
+  let reaction1Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
+  let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
+     let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
+  let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
+  reaction1.on("collect", r => {
+  message.channel.send(`☑ |   ${message.guild.members.size} يتم ارسال البرودكاست الى عضو `).then(m => m.delete(5000));
+  message.guild.members.forEach(m => {
+var bc = new
+Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle(':mega: Broadcasst')
+.addField('🔰Server🔰', message.guild.name)
+.addField('🚩From🚩', message.author.username)
+.addField('📜Message📜', args)
+.setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
+.setFooter(copy, client.user.avatarURL);
+  m.send({ embed: bc })
+  msg.delete();
+  })
+  })
+  reaction2.on("collect", r => {
+  message.channel.send(`**Broadcast Canceled.**`).then(m => m.delete(5000));
+  msg.delete();
+  })
+  })
+  }
+  })
+
 client.login(process.env.BOT_TOKEN)
