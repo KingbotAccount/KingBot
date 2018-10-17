@@ -2076,10 +2076,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 client.on("message", message => {
     if (message.content === (prefix + "help")) {
-     const embed = new Discord.RichEmbed() 
-         .setColor("RANDOM")
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`
+  message.channel.send(`
    
    **
    ╭╮╭━╮╱╱╱╱╱╱╭━━╮╱╱╱╭╮
