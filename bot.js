@@ -107,7 +107,7 @@ console.log(`Logged in as  * [ "  Team #KingBot " ] servers! [ " ${client.guilds
   .addField("Unmuted By", `<@${message.member.id}> with ID ${message.member.id}`)
   .addField("Unmuted In", message.channel)
   .addField("Time & Date", `${message.createdAt}`)
-  .setFooter("DannyBot")
+  .setFooter("KingBot 👑")
   let incidentchannel = message.guild.channels.find(`name`, "incidents");
   if(!incidentchannel) return message.channel.send("Can't find incidents channel.");
   
@@ -135,7 +135,7 @@ if(message.content.startsWith(prefix  +  'warn'))  {
 .addField('Reason:',  `${reason}`,  true)
 .addField("Warned  in:",`${message.channel.name}`)
 .addField("Time & Date:",`${message.createdAt}`)
-.setFooter("DannyBot")
+.setFooter("KingBot 👑")
 .setColor('#060c37')
 message.guild.channels.find('name',  'incidents').sendEmbed(reportembed)
 message.reply(`**:warning: ${user} has been warned !:warning:**`).then(msg  =>  msg.delete(3000));
@@ -615,7 +615,7 @@ client.on('message', message => {
 	  .addField("Reason:", `${reason}`)
 	  .addField("Kicked In :", `${message.channel.name}`)
 	  .addField("Time & Date :", `${message.createdAt}`)
-	  .setFooter('DannyBot');
+	  .setFooter('KingBot 👑');
 	  message.guild.channels.find('name',  'incidents').sendEmbed(Kickembed)
 	message.channel.send(`**:white_check_mark: ${user} has been kicked ! :airplane:**`)
 	user.send(`**:airplane: You are has been kicked in ${message.guild.name} reason: ${reason}**`)
@@ -1316,7 +1316,7 @@ client.on('message', async message => {
 			 message.channel.send(":white_check_mark: I've DMed you with my support server");
 		 const embed = new Discord.RichEmbed()
 			 .setColor("RANDOM")
-			 .setFooter('© DannyBot جميع الحقوق محفوظة 2018 لــبوت')
+			 .setFooter('© KingBot 👑 جميع الحقوق محفوظة 2018 لــبوت')
 			 .addField('سيرفر الدعم الفني', `https://discord.gg/agYdjPh`)
 		 message.author.send({embed});
 		}
@@ -2158,7 +2158,7 @@ client.on("message", message => {
    『${prefix}ping / View The Bot Ping』
    『${prefix}uptime / uptime bot』
    『${prefix}support / Support Server』
-   『${prefix}invite / Invite DannyBot』
+   『${prefix}invite / Invite KingBot 👑』
    『${prefix}botinfo / To View Server Information』
    **
              _ _---------------- _ _
