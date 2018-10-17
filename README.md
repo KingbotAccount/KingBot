@@ -1,2 +1,2 @@
-# DannyBot
-DannyBot Discord.js
+# KingBot
+KingBot Discord.js
