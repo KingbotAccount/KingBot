@@ -2076,7 +2076,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 client.on("message", message => {
     if (message.content === (prefix + "help")) {
-  message.channel.send(`
+  message.author.send(`
    
    **
    ╭╮╭━╮╱╱╱╱╱╱╭━━╮╱╱╱╭╮
@@ -2148,7 +2148,6 @@ client.on("message", message => {
 [❖═════════════════════════════❖]
    **
    `)
-   message.author.sendEmbed(embed)
    
    }
    });  
