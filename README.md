@@ -1,2 +1,2 @@
-# KingBot
-KingBot Repository
+# DannyBot
+DannyBot Discord.js
