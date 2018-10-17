@@ -2094,7 +2094,7 @@ client.on("message", message => {
 [❖═════ To Use All Orders of punishment You Need To Create Channel Named incidents ═══════❖]
 
 [❖═════════════════════════════❖]
-           Why KingBot ?__
+           Why KingBot ?
 - :rocket: Excellent connection speed
 - :beginner: Easy to use
 - :warning: Daily maintenance
